@@ -1,9 +1,11 @@
 # heroku-run-local
 
 A heroku plugin to run a command locally with the config vars of a
-heroku app. This can be useful to, e.g., run migrations against a
-production application before deploying the corresponding code that
-depends on them.
+heroku app.
+
+This can be useful to, e.g., run migrations against a production
+application before deploying the corresponding code that depends on
+them.
 
 ### Installation
 
@@ -19,14 +21,14 @@ $ heroku plugins:update git://github.com/deafbybeheading/heroku-run-local.git
 
 ### Usage
 
-`heroku run:local COMMAND`
+`heroku run:local COMMAND --app sushi`
 
 Note that if you use any direct environment variable references in your command,
 you'll need to escape them or quote them. Otherwise, they will be interpreted by
 your shell before being passed to the Heroku CLI. For example:
 
 ```bash
-$ heroku run:local psql '$DATABASE_URL'
+$ heroku run:local psql '$DATABASE_URL' --app sushi
 Pager usage (pager) is off.
 psql (9.4beta2, server 9.3.5)
 SSL connection (protocol: TLSv1.2, cipher: DHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
