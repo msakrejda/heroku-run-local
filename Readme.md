@@ -15,7 +15,7 @@ Note that if you use any direct environment variable references in your command,
 you'll need to escape them or quote them. Otherwise, they will be interpreted by
 your shell before being passed to the Heroku CLI. For example:
 
-```bash
+```console
 $ heroku run:local psql '$DATABASE_URL' --app sushi
 Pager usage (pager) is off.
 psql (9.4beta2, server 9.3.5)
