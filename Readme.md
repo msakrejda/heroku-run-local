@@ -7,18 +7,6 @@ This can be useful to, e.g., run migrations against a production
 application before deploying the corresponding code that depends on
 them.
 
-### Installation
-
-```bash
-$ heroku plugins:install git://github.com/deafbybeheading/heroku-run-local.git
-```
-
-#### Update
-
-```bash
-$ heroku plugins:update git://github.com/deafbybeheading/heroku-run-local.git
-```
-
 ### Usage
 
 `heroku run:local COMMAND --app sushi`
@@ -38,6 +26,18 @@ d6i28tbalesa80=>
 ```
 
 (This is more or less equivalent to `heroku pg:psql DATABASE_URL`).
+
+### Installation
+
+```bash
+$ heroku plugins:install git://github.com/deafbybeheading/heroku-run-local.git
+```
+
+#### Update
+
+```bash
+$ heroku plugins:update git://github.com/deafbybeheading/heroku-run-local.git
+```
 
 ## THIS IS BETA SOFTWARE
 
