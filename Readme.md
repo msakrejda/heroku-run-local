@@ -1,7 +1,9 @@
 # heroku-run-local
 
 A heroku plugin to run a command locally with the config vars of a
-heroku app.
+heroku app. This can be useful to, e.g., run migrations against a
+production application before deploying the corresponding code that
+depends on them.
 
 ### Installation
 
