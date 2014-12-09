@@ -33,6 +33,8 @@ Type "help" for help.
 d6i28tbalesa80=>
 ```
 
+(This is more or less equivalent to `heroku pg:psql DATABASE_URL`).
+
 ## THIS IS BETA SOFTWARE
 
 Thanks for trying it out. If you find any problems, please report an
