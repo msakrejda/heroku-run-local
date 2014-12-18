@@ -26,7 +26,7 @@ class Heroku::Command::Run < Heroku::Command::Base
     error("Usage: heroku run COMMAND") if command.empty?
 
     vars = api.get_config_vars(app).body
-    vars.each do |key, value|
+    vars.reject { |key,_| %w(PATH LD_LIBRARY_PATH).include? key }.each do |key, value|
       ENV[key] = value
     end
 
