@@ -5,7 +5,8 @@ heroku app.
 
 This can be useful to, e.g., run migrations against a production
 application before deploying the corresponding code that depends on
-them.
+them, or to iterate more quickly without having to deploy small
+changes to a staging environment individually.
 
 ### Usage
 
@@ -22,7 +23,7 @@ psql (9.4beta2, server 9.3.5)
 SSL connection (protocol: TLSv1.2, cipher: DHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
 Type "help" for help.
 
-d6i28tbalesa80=>
+sushi::DATABASE=>
 ```
 
 (This is more or less equivalent to `heroku pg:psql DATABASE_URL`).
@@ -30,13 +31,13 @@ d6i28tbalesa80=>
 ### Installation
 
 ```bash
-$ heroku plugins:install git://github.com/deafbybeheading/heroku-run-local.git
+$ heroku plugins:install git://github.com/uhoh-itsmaciek/heroku-run-local.git
 ```
 
 #### Update
 
 ```bash
-$ heroku plugins:update git://github.com/deafbybeheading/heroku-run-local.git
+$ heroku plugins:update git://github.com/uhoh-itsmaciek/heroku-run-local.git
 ```
 
 ## THIS IS BETA SOFTWARE
