@@ -1,5 +1,15 @@
 # heroku-run-local
 
+## The Ruby version of heroku-run-local is deprecated
+
+As the Heroku CLI moves from Ruby to Node.js, this version of the
+plugin has been deprecated and is no longer being developed. Please
+use the
+[node version](https://github.com/uhoh-itsmaciek/heroku-run-localjs)
+instead: it has full feature parity.
+
+### Overview
+
 A heroku plugin to run a command locally with the config vars of a
 heroku app.
 
